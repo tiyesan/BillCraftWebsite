@@ -4,185 +4,350 @@
 
 body{
     margin:0;
-    background:#050505;
-    color:#00ff66;
-    font-family:"Courier New",Consolas,monospace;
+    background:#111;
+    color:#d0d0d0;
+    font-family:
+    "Courier New",
+    "Microsoft YaHei",
+    monospace;
     font-size:14px;
 }
 
+
+/* 主窗口 */
+
 .dos-window{
-    width:95%;
-    max-width:1000px;
-    margin:20px auto;
-    border:1px solid #008f3f;
-    background:#080808;
+
+    width:92%;
+    max-width:980px;
+
+    margin:25px auto;
+
+    background:#181818;
+
+    border:2px solid #666;
+
+    box-shadow:
+    4px 4px 0 #000,
+    0 0 20px rgba(0,0,0,.8);
+
     padding:12px;
-    box-shadow:0 0 10px #003300;
+
 }
 
 
-/* 顶部标题 */
+
+/* 顶部系统栏 */
 
 .dos-title{
-    height:32px;
-    line-height:32px;
-    padding-left:10px;
-    background:#111;
-    border-bottom:1px solid #008f3f;
-    color:#00ff66;
+
+    background:#222;
+
+    color:#eee;
+
+    border:1px solid #555;
+
+    padding:8px 12px;
+
     font-weight:bold;
+
+    letter-spacing:1px;
+
 }
 
 
-/* 启动日志 */
+
+/* 启动信息 */
 
 .startup{
-    margin:12px 0;
-    padding:10px;
-    border:1px solid #003f20;
-    line-height:1.5;
-    background:#020202;
+
+    margin-top:12px;
+
+    padding:12px;
+
+    background:#0b0b0b;
+
+    border:1px solid #333;
+
+    line-height:1.7;
+
 }
+
+
+.startup p:first-child{
+
+    color:#aaa;
+
+}
+
 
 .cursor{
-    color:#ffff00;
+
+    color:#00cc66;
+
+    font-weight:bold;
+
 }
 
 
-/* 标题 */
+
+
+
+
+/* 主标题 */
 
 h1{
-    font-size:30px;
+
+    color:#f0f0f0;
+
+    font-size:32px;
+
     margin:15px 0 5px;
-    color:#00ff66;
+
+    letter-spacing:2px;
+
 }
+
+
 
 h2{
+
+    color:#d4a017;
+
     font-size:18px;
-    color:#ffff00;
-    margin:18px 0 8px;
-    border-bottom:1px solid #004d26;
-    padding-bottom:4px;
+
+    border-bottom:
+
+    1px solid #444;
+
+    padding-bottom:6px;
+
+    margin:18px 0 10px;
+
 }
+
+
 
 h3{
-    font-size:16px;
-    color:#00ffff;
+
+    color:#7fc8ff;
+
     margin:5px 0;
+
 }
 
+
 h4{
+
     color:#aaa;
+
     margin:5px 0 10px;
+
 }
+
+
+
+
+
 
 
 /* 介绍 */
 
 .intro{
-    border:1px solid #003f20;
+
+    background:#151515;
+
+    border-left:
+
+    3px solid #d4a017;
+
     padding:12px;
-    line-height:1.6;
-    margin-bottom:12px;
+
+    line-height:1.7;
+
 }
 
 
-/* 软件列表 */
 
-.products{
-    margin-top:10px;
-}
+
+
+
+
+/* 软件模块 */
 
 
 .software-box{
-    border:1px solid #006633;
-    background:#050505;
+
+    background:#111;
+
+    border:
+
+    1px solid #444;
+
+    margin:12px 0;
+
     padding:12px;
-    margin:10px 0;
-    line-height:1.5;
+
+    line-height:1.6;
+
 }
+
 
 
 .software-box:hover{
-    border-color:#00ff66;
+
+    border-color:#d4a017;
+
 }
 
 
-/* 文字 */
 
-p{
-    margin:5px 0;
+
+
+
+
+/* 状态文字 */
+
+
+.software-box p::first-letter{
+
+    color:#00cc66;
+
 }
+
+
+
+
 
 
 /* 链接 */
 
+
 a{
-    color:#00ccff;
+
+    color:#66ccff;
+
     text-decoration:none;
+
+    word-break:break-all;
+
 }
+
 
 a:hover{
-    color:#ffff00;
+
+    color:#ffd700;
+
 }
 
 
-/* 联系区域 */
+
+
+
+
+/* 联系 */
+
 
 .contact{
-    border-top:1px solid #004d26;
+
     margin-top:15px;
-    padding-top:10px;
+
+    padding:12px;
+
+    background:#151515;
+
+    border:1px solid #333;
+
     line-height:1.8;
+
 }
 
 
-/* footer */
+
+
+
+
+/* 页脚 */
 
 footer{
+
     margin-top:15px;
-    padding-top:10px;
-    border-top:1px solid #004d26;
+
+    padding:10px;
+
     text-align:center;
-    color:#888;
+
+    color:#777;
+
+    border-top:
+
+    1px solid #333;
+
     line-height:1.8;
+
 }
 
 
-/* 模拟终端扫描线 */
 
-.dos-window:before{
+
+
+
+/* CRT轻微扫描 */
+
+.dos-window:after{
+
     content:"";
+
     position:fixed;
+
     inset:0;
+
     pointer-events:none;
+
     background:
+
     repeating-linear-gradient(
-        0deg,
-        rgba(0,255,80,0.03),
-        rgba(0,255,80,0.03) 1px,
-        transparent 2px,
-        transparent 4px
+
+    0deg,
+
+    rgba(255,255,255,0.015),
+
+    rgba(255,255,255,0.015) 1px,
+
+    transparent 2px
+
     );
+
 }
 
 
-/* 手机 */
+
+
+
 
 @media(max-width:600px){
 
 .dos-window{
-    width:98%;
-    margin:5px auto;
-    padding:8px;
+
+width:96%;
+
+margin:8px auto;
+
+padding:8px;
+
 }
 
+
 h1{
-    font-size:24px;
+
+font-size:25px;
+
 }
 
 body{
-    font-size:13px;
+
+font-size:13px;
+
 }
 
 }
