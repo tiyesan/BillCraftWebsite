@@ -1,0 +1,487 @@
+/* =====================================
+   BillCraft DOS Retro Website Style
+   ===================================== */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    background: #000000;
+
+    color: #00ff00;
+
+    font-family:
+
+    "Courier New",
+    "Consolas",
+    monospace;
+
+    font-size: 16px;
+
+}
+
+
+
+.dos-window {
+
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+
+    border: 2px solid #00ff00;
+
+
+    padding: 25px;
+
+
+    background:
+
+    rgba(0,0,0,0.95);
+
+
+    box-shadow:
+
+    0 0 20px #00ff00;
+
+
+}
+
+
+
+
+
+/* 顶部 */
+
+.dos-title {
+
+
+    border-bottom:
+
+    1px solid #00ff00;
+
+
+    padding-bottom:15px;
+
+
+    font-size:22px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* 启动区域 */
+
+
+.startup {
+
+
+    line-height:1.8;
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+.cursor {
+
+
+    animation:
+
+    blink 1s infinite;
+
+
+}
+
+
+
+@keyframes blink {
+
+
+    50% {
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+
+
+
+
+/* 标题 */
+
+
+h1 {
+
+
+    font-size:48px;
+
+
+    margin-top:40px;
+
+
+    text-shadow:
+
+    0 0 10px #00ff00;
+
+
+}
+
+
+
+h2 {
+
+
+    margin-top:35px;
+
+
+    color:#00ff99;
+
+
+    border-bottom:
+
+    1px dashed #00ff00;
+
+
+    padding-bottom:10px;
+
+
+}
+
+
+
+h3 {
+
+
+    color:#ffff00;
+
+
+}
+
+
+
+h4 {
+
+
+    color:#00ffff;
+
+
+}
+
+
+
+
+
+
+
+
+/* 介绍区域 */
+
+
+.intro {
+
+
+    line-height:2;
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+
+
+
+
+/* 软件模块 */
+
+
+.products {
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+
+.software-box {
+
+
+    border:
+
+    1px solid #00ff00;
+
+
+    padding:25px;
+
+
+    margin:25px 0;
+
+
+    background:
+
+    rgba(0,30,0,0.3);
+
+
+}
+
+
+
+.software-box:hover {
+
+
+    box-shadow:
+
+    0 0 15px #00ff00;
+
+
+}
+
+
+
+
+
+
+
+/* 链接 */
+
+
+a {
+
+
+    color:#00ffff;
+
+
+    text-decoration:none;
+
+
+    word-break:break-all;
+
+
+}
+
+
+
+a:hover {
+
+
+    color:#ffff00;
+
+
+    text-decoration:underline;
+
+
+}
+
+
+
+
+
+
+
+
+/* 联系 */
+
+
+.contact {
+
+
+    margin-top:50px;
+
+
+    line-height:2;
+
+
+}
+
+
+
+
+
+
+/* 下载按钮 */
+
+
+button {
+
+
+    background:black;
+
+
+    color:#00ff00;
+
+
+    border:
+
+    1px solid #00ff00;
+
+
+    padding:10px 25px;
+
+
+    font-family:
+
+    "Courier New";
+
+
+}
+
+
+
+button:hover {
+
+
+    background:#003300;
+
+
+}
+
+
+
+
+
+
+
+/* 页脚 */
+
+
+footer {
+
+
+    margin-top:50px;
+
+
+    text-align:center;
+
+
+    line-height:2;
+
+
+}
+
+
+
+
+
+
+
+/* CRT扫描线效果 */
+
+
+body::before {
+
+
+    content:"";
+
+
+    position:fixed;
+
+
+    top:0;
+
+    left:0;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    pointer-events:none;
+
+
+    background:
+
+
+    repeating-linear-gradient(
+
+    0deg,
+
+    rgba(0,255,0,0.03),
+
+    rgba(0,255,0,0.03) 1px,
+
+    transparent 1px,
+
+    transparent 3px
+
+    );
+
+
+}
+
+
+
+
+
+
+
+/* 手机适配 */
+
+
+@media(max-width:700px){
+
+
+.dos-window{
+
+
+    width:95%;
+
+
+    padding:15px;
+
+
+}
+
+
+
+h1{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+body{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+}
