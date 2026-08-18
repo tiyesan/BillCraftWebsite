@@ -362,3 +362,22 @@ font-size:13px;
 }
 
 }
+
+
+.status-online{
+
+    color:#00cc66;
+
+    font-weight:bold;
+
+}
+
+
+
+.visitor-count{
+
+    color:#d4a017;
+
+    font-weight:bold;
+
+}
