@@ -743,7 +743,7 @@ SYSTEM STATUS : <span class="status-online">ONLINE</span>
 
 <p>
 
-VISITOR COUNT : <span class="visitor-count">000001</span>
+VISITOR COUNT : <span id="visitor-count" class="visitor-count">------</span>
 
 </p>
 
@@ -778,7 +778,25 @@ SYSTEM SHUTDOWN_
 
 </div>
 
+<script>
+fetch("https://billcraft-counter.tieshanfu.workers.dev/count")
+    .then(response => response.json())
+    .then(data => {
 
+        const count = Number(data.total);
+
+        document.getElementById("visitor-count").textContent =
+            String(count).padStart(6, "0");
+
+    })
+    .catch(() => {
+
+        document.getElementById("visitor-count").textContent =
+            "------";
+
+    });
+</script>
+  
 </body>
 
 
