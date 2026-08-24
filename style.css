@@ -381,3 +381,14 @@ font-size:13px;
     font-weight:bold;
 
 }
+
+.intro-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-title img {
+    width: 100px;
+    height: 100px;
+}
